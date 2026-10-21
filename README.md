@@ -13,7 +13,7 @@ Students often struggle with distractions, time management, and maintaining cons
 - 📅 **Smart Study Planner** — Organize subjects, tasks, and study goals.
 - ⏱️ **Focus Timer** — Manage study sessions and track time.
 - 🔔 **Study Reminders** — Get reminders to return to planned study sessions.
-- 🤖 **AI-Assisted Learning** — Support students with learning and doubt-solving features where implemented.
+- 🤖 **AI-Assisted Learning** — Support students with learning and doubt-solving features where implemented (DEMO).
 - ⭐ **XP and Streaks** — Make consistent study habits more engaging.
 - 📈 **Progress Tracking** — Review study activity and progress.
 - 📝 **Quizzes and Flashcards** — Support revision and practice where implemented.
@@ -41,7 +41,7 @@ Our goal is to help students build better study habits by combining productivity
 ## 🔮 What's Next?
 
 - More personalized study plans.
-- Improved AI tutoring and doubt-solving.
+- Improved AI tutoring and doubt-solving (DEMO).
 - Smarter study reminders.
 - Detailed study analytics.
 - More quizzes, flashcards, and revision tools.
