@@ -1232,13 +1232,36 @@
         paintG();
       }
       const mins = (s) => Math.round(s / 60);
-      async function ai(p) {
-        if (!SM)
-          throw Error(
-            "AI is not available in this view. Open the published page and allow access.",
-          );
-        return (await SM(p, { cache: false })).text;
-      }
+      
+async function ai(p) {
+  const q = String(p).toLowerCase();
+
+  if (q.includes("pointer")) {
+    return "A pointer in C is a variable that stores the memory address of another variable. Example: int x = 10; int *p = &x;";
+  }
+
+  if (q.includes("loop") || q.includes("for")) {
+    return "A loop repeats a block of code. In C, common loops are for, while, and do-while.";
+  }
+
+  if (q.includes("array")) {
+    return "An array stores multiple values of the same data type. Example: int marks[3] = {80, 90, 75};";
+  }
+
+  if (q.includes("function")) {
+    return "A function is a reusable block of code that performs a specific task. Example: int add(int a, int b) { return a + b; }";
+  }
+
+  if (q.includes("study") || q.includes("focus")) {
+    return "Try studying for 25 minutes, take a 5-minute break, and write down three important points you learned.";
+  }
+
+  if (q.includes("hello") || q.includes("hi")) {
+    return "Hey student! 👋 I'm your Study Companion demo tutor. Ask me about C pointers, loops, arrays, functions, or study tips.";
+  }
+
+  return "I'm your Study Companion demo tutor! I can currently help with C pointers, loops, arrays, functions, and study tips. Try asking about one of these topics.";
+}
       async function aij(p) {
         if (!SM) throw Error("AI is not available in this view.");
         return await SM.json(p + "\nReturn only valid JSON.", { cache: false });
@@ -1534,14 +1557,8 @@
         }
       }, 500);
       render();
-      if (window.claude && claude.use)
-        claude
-          .use("sample")
-          .then((x) => {
-            SM = x;
-            if (tab == "ai") render();
-          })
-          .catch(() => {});
+      SM = null;
+      if (tab === "ai") render();
     </script>
   </body>
 </html>
