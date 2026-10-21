@@ -1,4 +1,4 @@
-****Your Adaptive Study Companion 📚🤖****
+_**Your Adaptive Study Companion 📚🤖**_
 Plan Better. Focus Longer. Learn Smarter.
 
 Your Adaptive Study Companion is a student-focused web app that makes studying more organized and productive. It brings study planning, focus sessions, reminders, AI help and progress tracking together in one place.
